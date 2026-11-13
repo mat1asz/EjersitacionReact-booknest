@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "title": "El Nombre del Viento",
+    "author": "Patrick Rothfuss",
+    "genre": "Fantasía",
+    "genreVariant": "primary",
+    "tag": "Bestseller",
+    "price": 28500,
+    "stock": 5,
+    "rating": 4.8,
+    "pages": 880,
+    "cover": "https://picsum.photos/seed/booknest1/400/600",
+    "description": "La historia de Kvothe, un músico, mago y aventurero legendario que narra su propia vida: desde su infancia en una troupe de artistas itinerantes hasta sus años en la Universidad.",
+    "specs": {
+      "editorial": "Plaza & Janés",
+      "idioma": "Español",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-8401337208"
+    },
+    "chapters": [
+      "El silencio de tres partes",
+      "Una troupe en el camino",
+      "Tarbean",
+      "La Universidad",
+      "El Eolio"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Cien Años de Soledad",
+    "author": "Gabriel García Márquez",
+    "genre": "Clásico",
+    "genreVariant": "warning",
+    "tag": "Clásico",
+    "price": 19900,
+    "stock": 8,
+    "rating": 4.9,
+    "pages": 496,
+    "cover": "https://picsum.photos/seed/booknest2/400/600",
+    "description": "La saga de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo, obra cumbre del realismo mágico latinoamericano.",
+    "specs": {
+      "editorial": "Sudamericana",
+      "idioma": "Español",
+      "encuadernacion": "Tapa dura",
+      "isbn": "978-0307474728"
+    },
+    "chapters": [
+      "La fundación de Macondo",
+      "Los gitanos de Melquíades",
+      "La peste del insomnio",
+      "Las guerras del coronel",
+      "El final de la estirpe"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "genre": "Programación",
+    "genreVariant": "success",
+    "tag": "Técnico",
+    "price": 34900,
+    "stock": 3,
+    "rating": 4.6,
+    "pages": 464,
+    "cover": "https://picsum.photos/seed/booknest3/400/600",
+    "description": "Un manual práctico para escribir código legible y mantenible: nombres significativos, funciones pequeñas, manejo de errores y pruebas unitarias.",
+    "specs": {
+      "editorial": "Prentice Hall",
+      "idioma": "Español",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-0132350884"
+    },
+    "chapters": [
+      "Código limpio",
+      "Nombres con sentido",
+      "Funciones",
+      "Comentarios",
+      "Pruebas de unidad"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "genre": "Historia",
+    "genreVariant": "danger",
+    "tag": "Bestseller",
+    "price": 24500,
+    "stock": 6,
+    "rating": 4.7,
+    "pages": 512,
+    "cover": "https://picsum.photos/seed/booknest4/400/600",
+    "description": "Un recorrido por la historia de la humanidad desde la revolución cognitiva hasta la revolución científica, y las preguntas que plantea sobre nuestro futuro.",
+    "specs": {
+      "editorial": "Debate",
+      "idioma": "Español",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-8499926223"
+    },
+    "chapters": [
+      "La revolución cognitiva",
+      "La revolución agrícola",
+      "La unificación de la humanidad",
+      "La revolución científica"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Rayuela",
+    "author": "Julio Cortázar",
+    "genre": "Clásico",
+    "genreVariant": "warning",
+    "tag": "Clásico",
+    "price": 17500,
+    "stock": 4,
+    "rating": 4.5,
+    "pages": 736,
+    "cover": "https://picsum.photos/seed/booknest5/400/600",
+    "description": "Una novela que puede leerse de varias maneras: la historia de Horacio Oliveira entre París y Buenos Aires, contada en capítulos que el lector puede saltear o reordenar.",
+    "specs": {
+      "editorial": "Alfaguara",
+      "idioma": "Español",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-8420437484"
+    },
+    "chapters": [
+      "Del lado de allá",
+      "Del lado de acá",
+      "De otros lados (capítulos prescindibles)"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "JavaScript: The Good Parts",
+    "author": "Douglas Crockford",
+    "genre": "Programación",
+    "genreVariant": "success",
+    "tag": "Técnico",
+    "price": 22900,
+    "stock": 2,
+    "rating": 4.3,
+    "pages": 176,
+    "cover": "https://picsum.photos/seed/booknest6/400/600",
+    "description": "Las mejores partes del lenguaje JavaScript explicadas de forma concisa: funciones, objetos, herencia, arrays y expresiones regulares.",
+    "specs": {
+      "editorial": "O'Reilly",
+      "idioma": "Inglés",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-0596517748"
+    },
+    "chapters": [
+      "Good Parts",
+      "Grammar",
+      "Objects",
+      "Functions",
+      "Inheritance",
+      "Arrays"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "genre": "Ciencia Ficción",
+    "genreVariant": "primary",
+    "tag": "Nuevo",
+    "price": 26900,
+    "stock": 7,
+    "rating": 4.8,
+    "pages": 784,
+    "cover": "https://picsum.photos/seed/booknest7/400/600",
+    "description": "En el desértico planeta Arrakis, Paul Atreides debe sobrevivir a una traición y liderar a los Fremen en una lucha por el control de la especia más valiosa del universo.",
+    "specs": {
+      "editorial": "Debolsillo",
+      "idioma": "Español",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-8497596824"
+    },
+    "chapters": [
+      "Dune",
+      "Muad'Dib",
+      "El Profeta"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "El Principito",
+    "author": "Antoine de Saint-Exupéry",
+    "genre": "Infantil",
+    "genreVariant": "danger",
+    "tag": "Clásico",
+    "price": 9900,
+    "stock": 10,
+    "rating": 4.9,
+    "pages": 96,
+    "cover": "https://picsum.photos/seed/booknest8/400/600",
+    "description": "Un piloto perdido en el desierto del Sahara conoce a un pequeño príncipe venido de otro planeta, en una fábula sobre la amistad, el amor y lo esencial.",
+    "specs": {
+      "editorial": "Salamandra",
+      "idioma": "Español",
+      "encuadernacion": "Tapa dura",
+      "isbn": "978-8498381498"
+    },
+    "chapters": [
+      "El dibujo número uno",
+      "El asteroide B 612",
+      "La rosa",
+      "El zorro",
+      "El regreso"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Hábitos Atómicos",
+    "author": "James Clear",
+    "genre": "Desarrollo Personal",
+    "genreVariant": "success",
+    "tag": "Bestseller",
+    "price": 21500,
+    "stock": 5,
+    "rating": 4.7,
+    "pages": 328,
+    "cover": "https://picsum.photos/seed/booknest9/400/600",
+    "description": "Un método práctico para crear buenos hábitos y eliminar los malos a partir de pequeños cambios que, sumados en el tiempo, producen resultados extraordinarios.",
+    "specs": {
+      "editorial": "Paidós",
+      "idioma": "Español",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-8418118036"
+    },
+    "chapters": [
+      "Los fundamentos",
+      "Hacerlo obvio",
+      "Hacerlo atractivo",
+      "Hacerlo sencillo",
+      "Hacerlo satisfactorio"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Ciencia Ficción",
+    "genreVariant": "primary",
+    "tag": "Clásico",
+    "price": 15900,
+    "stock": 6,
+    "rating": 4.6,
+    "pages": 352,
+    "cover": "https://picsum.photos/seed/booknest10/400/600",
+    "description": "Winston Smith vive bajo la vigilancia constante del Gran Hermano en una sociedad totalitaria donde el Partido controla la historia, el lenguaje y el pensamiento.",
+    "specs": {
+      "editorial": "Debolsillo",
+      "idioma": "Español",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-8499890944"
+    },
+    "chapters": [
+      "Primera parte",
+      "Segunda parte",
+      "Tercera parte",
+      "Apéndice: los principios de la neolengua"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Ficciones",
+    "author": "Jorge Luis Borges",
+    "genre": "Clásico",
+    "genreVariant": "warning",
+    "tag": "Clásico",
+    "price": 16500,
+    "stock": 3,
+    "rating": 4.8,
+    "pages": 224,
+    "cover": "https://picsum.photos/seed/booknest11/400/600",
+    "description": "Cuentos que exploran laberintos, bibliotecas infinitas, espejos y mundos imaginarios: una de las obras fundamentales de la literatura del siglo XX.",
+    "specs": {
+      "editorial": "Debolsillo",
+      "idioma": "Español",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-8499089508"
+    },
+    "chapters": [
+      "Tlön, Uqbar, Orbis Tertius",
+      "La biblioteca de Babel",
+      "El jardín de senderos que se bifurcan",
+      "Funes el memorioso",
+      "La muerte y la brújula"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "genre": "Programación",
+    "genreVariant": "success",
+    "tag": "Nuevo",
+    "price": 29900,
+    "stock": 4,
+    "rating": 4.5,
+    "pages": 472,
+    "cover": "https://picsum.photos/seed/booknest12/400/600",
+    "description": "Una introducción moderna a la programación con JavaScript: valores, funciones, estructuras de datos, programación asíncrona, el navegador y Node.js.",
+    "specs": {
+      "editorial": "No Starch Press",
+      "idioma": "Inglés",
+      "encuadernacion": "Tapa blanda",
+      "isbn": "978-1593279509"
+    },
+    "chapters": [
+      "Values, Types, and Operators",
+      "Program Structure",
+      "Functions",
+      "Asynchronous Programming",
+      "JavaScript and the Browser",
+      "Node.js"
+    ]
+  }
+]

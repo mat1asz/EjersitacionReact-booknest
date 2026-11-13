@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest | Librería Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="store-container">
+        <!-- NAVBAR: En React esto será el componente <Navbar /> -->
+        <header class="navbar">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <a href="index.html" class="logo-text">Book<span class="logo-highlight">Nest</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Catálogo</a>
+                <a href="#club" class="nav-link">Club de Lectura</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="pedido.html" class="btn-order">
+                    🛒 Mi Pedido <span id="order-counter" class="order-badge">0</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <!-- HERO: En React puede ser un componente <HeroBanner /> -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <span class="badge">Temporada de lectura 2026</span>
+                    <h1 class="hero-title">Tu próxima gran historia te está esperando</h1>
+                    <p class="hero-subtitle">
+                        Clásicos, novedades y libros técnicos con envío gratis superando los $50.000.
+                        <br>
+                        Armá tu pedido con hasta 4 títulos distintos.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+                        <a href="#club" class="btn-secondary">Sumarme al Club</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <img src="https://picsum.photos/seed/booknest-hero/700/520" alt="Estantería con libros" class="hero-img">
+                </div>
+            </section>
+
+            <hr class="divider">
+
+            <!-- CATÁLOGO: los libros se cargan dinámicamente desde js/app.js -->
+            <section id="catalogo" class="catalog-section">
+                <div class="section-header">
+                    <h2 class="section-title">Nuestro Catálogo</h2>
+                    <p class="section-description">Elegí entre los títulos más leídos por la comunidad BookNest.</p>
+                </div>
+
+                <div id="loading" class="state-feedback">Cargando libros de la estantería...</div>
+                <div id="error" class="state-feedback state-error-msg" style="display: none;"></div>
+
+                <div id="books-grid" class="books-grid"></div>
+            </section>
+
+            <!-- CLUB DE LECTURA (contenido estático) -->
+            <section id="club" class="club-section">
+                <div class="club-box">
+                    <h2 class="club-title">Sumate al Club de Lectura</h2>
+                    <p class="club-subtitle">Cada mes elegimos un libro, lo leemos juntos y te avisamos de las novedades antes que nadie.</p>
+                    <form class="club-form" onsubmit="event.preventDefault(); alert('¡Bienvenido al Club de Lectura!');">
+                        <input type="email" class="form-input" placeholder="tu-email@dominio.com" required>
+                        <button type="submit" class="btn-submit">Quiero sumarme</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <hr class="footer-divider">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">📚</span>
+                    <span class="footer-logo-text">BookNest Librería</span>
+                </div>
+                <p class="footer-copy">© 2026 BookNest - Examen de Migración a React</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

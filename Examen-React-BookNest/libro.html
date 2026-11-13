@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Libro | BookNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="store-container">
+        <header class="navbar">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <a href="index.html" class="logo-text">Book<span class="logo-highlight">Nest</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Catálogo</a>
+                <a href="index.html#club" class="nav-link">Club de Lectura</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="pedido.html" class="btn-order">
+                    🛒 Mi Pedido <span id="order-counter" class="order-badge">0</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="detail-view-container">
+                <a href="index.html" class="btn-secondary" style="align-self: flex-start; margin-bottom: 24px;">&larr; Volver al Catálogo</a>
+
+                <div id="loading" class="state-feedback">Buscando el libro en la estantería...</div>
+                <div id="error" class="state-feedback state-error-msg" style="display: none;"></div>
+
+                <!-- Contenedor del detalle: se completa desde js/libro.js -->
+                <article id="book-detail" class="detail-layout" style="display: none;">
+                    <div class="detail-cover-box">
+                        <img id="detail-cover" src="" alt="">
+                    </div>
+                    <div class="detail-info">
+                        <div class="detail-meta">
+                            <span id="detail-genre" class="card-badge"></span>
+                            <span id="detail-tag" class="badge"></span>
+                        </div>
+                        <h1 id="detail-title" style="font-family: var(--font-title); font-size: 2.2rem; line-height: 1.15;"></h1>
+                        <p id="detail-author" style="color: var(--text-muted); font-size: 1.1rem;"></p>
+
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <span id="detail-price" style="font-size: 1.8rem; font-weight: 700; color: var(--accent-color);"></span>
+                            <span id="detail-rating" style="color: var(--warning-color); font-weight: 600;"></span>
+                        </div>
+
+                        <p id="detail-description" style="color: var(--text-muted); line-height: 1.7;"></p>
+
+                        <div style="font-size: 0.95rem;">
+                            <strong>Disponibilidad: </strong>
+                            <span id="detail-stock" style="color: var(--success-color);"></span>
+                            <span style="color: var(--text-muted);"> · </span>
+                            <span id="detail-pages" style="color: var(--text-muted);"></span>
+                        </div>
+
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 8px;">Ficha Técnica</h3>
+                            <ul id="detail-specs" class="specs-list"></ul>
+                        </div>
+
+                        <div>
+                            <h3 style="font-size: 1rem; margin-bottom: 8px;">Índice de Contenidos</h3>
+                            <ul id="detail-chapters" class="chapters-list"></ul>
+                        </div>
+
+                        <div style="margin-top: 8px; display: flex; gap: 12px;">
+                            <button id="btn-add-order" type="button" class="btn-primary" style="flex: 1;">Agregar al Pedido 🛒</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <hr class="footer-divider">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">📚</span>
+                    <span class="footer-logo-text">BookNest Librería</span>
+                </div>
+                <p class="footer-copy">© 2026 BookNest - Examen de Migración a React</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/libro.js"></script>
+</body>
+</html>

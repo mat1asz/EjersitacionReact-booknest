@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pedido | BookNest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="store-container">
+        <header class="navbar">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <a href="index.html" class="logo-text">Book<span class="logo-highlight">Nest</span></a>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Catálogo</a>
+                <a href="index.html#club" class="nav-link">Club de Lectura</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="pedido.html" class="btn-order active">
+                    🛒 Mi Pedido <span id="order-counter" class="order-badge">0</span>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section class="order-view-container">
+                <h1 style="font-family: var(--font-title); font-size: 2.2rem; margin-bottom: 8px;">Mi Pedido</h1>
+                <p style="color: var(--text-muted); margin-bottom: 24px;">Podés llevar hasta 4 títulos distintos por pedido.</p>
+
+                <div id="order-empty" class="state-feedback" style="display: none;">
+                    <p>Todavía no agregaste ningún libro a tu pedido.</p>
+                    <a href="index.html" class="btn-primary" style="margin-top: 8px;">Explorar el Catálogo</a>
+                </div>
+
+                <div id="order-content" style="display: none;">
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>Libro</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th>Quitar</th>
+                            </tr>
+                        </thead>
+                        <tbody id="order-items-body">
+                            <!-- Filas generadas dinámicamente desde js/pedido.js -->
+                        </tbody>
+                    </table>
+
+                    <div class="order-bottom">
+                        <button id="btn-empty-order" class="btn-secondary" style="color: var(--danger-color); border-color: rgba(242, 139, 130, 0.35);">
+                            Vaciar Pedido
+                        </button>
+
+                        <div class="order-summary">
+                            <h2 style="font-size: 1.15rem;">Resumen del Pedido</h2>
+                            <div class="summary-row">
+                                <span style="color: var(--text-muted);">Títulos distintos:</span>
+                                <span><span id="summary-titles">0</span> / 4</span>
+                            </div>
+                            <div class="summary-row">
+                                <span style="color: var(--text-muted);">Unidades:</span>
+                                <span id="summary-units">0</span>
+                            </div>
+                            <div class="summary-row">
+                                <span style="color: var(--text-muted);">Subtotal:</span>
+                                <span id="summary-subtotal">$0</span>
+                            </div>
+                            <div class="summary-row">
+                                <span style="color: var(--text-muted);">Envío:</span>
+                                <span id="summary-shipping">$0</span>
+                            </div>
+                            <div class="summary-row summary-total">
+                                <span>Total:</span>
+                                <span id="summary-total">$0</span>
+                            </div>
+                            <button type="button" class="btn-primary" onclick="alert('¡Pedido confirmado! Te enviamos el detalle por email.');">
+                                Confirmar Pedido
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <hr class="footer-divider">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">📚</span>
+                    <span class="footer-logo-text">BookNest Librería</span>
+                </div>
+                <p class="footer-copy">© 2026 BookNest - Examen de Migración a React</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/pedido.js"></script>
+</body>
+</html>
